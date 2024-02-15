@@ -1,0 +1,8 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="img_des">poster</string>
+    <string name="no_caption">No caption</string>
+    <string name="search">Search</string>
+    <string name="alert_save">Are You Want To save Image?</string>
+</resources>

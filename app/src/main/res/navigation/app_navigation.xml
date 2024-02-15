@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/comics_navigation">
+    <include app:graph="@navigation/comics_navigation" />
+    <include app:graph="@navigation/details_navigation" />
+
+    <action
+        android:id="@+id/action_details"
+        app:destination="@id/details_navigation">
+        <argument
+            android:name="comics"
+            android:defaultValue="@null"
+            app:nullable="true"
+            app:argType="com.mohamed.tasks.details.presentation.model.ComicsDetails" />
+    </action>
+
+</navigation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/comics_navigation"
+    app:startDestination="@id/comics_fragment">
+    <fragment
+        android:id="@+id/comics_fragment"
+        android:name="com.mohamed.tasks.comics.presentation.view.ComicsFragment"
+        android:label="Comics Fragment" >
+
+        <deepLink
+            app:uri="comics://com.chefaa.app/comics_list" />
+    </fragment>
+</navigation>
