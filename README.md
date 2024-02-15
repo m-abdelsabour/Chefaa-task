@@ -1,32 +1,28 @@
 
 # Chefaa - Android coding challenge
 
-A Simple Movies app 
+A Simple Comics app 
 
+## Instruction to run Project
+
+1: Install Git.
+2: Install Android Studio.
+3: Clone the project from this url 
+## https://github.com/m-abdelsabour/Chefaa-task.git
 
 ## API Reference
 
-#### Get movies list
+#### Get comics list
 
 ```http
-  GET /https://api.themoviedb.org/3/discover/movie?api_key={apiKey}
+  GET https://gateway.marvel.com/v1/public/comics?ts={timestamp}&apikey={api_key}&hash={md5 for three value}
 ```
 
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `apiKey` | `string` | **Required**. Your API key |
-
-#### Get a movie details by id
-
-```http
-  GET /https://api.themoviedb.org/3/movie/{id}?api_key={apiKey}
-```
-
-| Parameter | Type     | Description                   |
-| :-------- | :------- |:------------------------------|
-| `id`      | `string` | **Required**. Movie Id        |
-|`apiKey`  | `string` | **Required**. Your API key    |
-
+| Parameter | Type     | Description                               |
+|:----------| :------- |:------------------------------------------|
+| `apiKey`  | `string` | **Required**. Your API key                |
+| `ts`      | `string` | **Required**. timeStamp                   |
+| `hash`    | `string` | **Required**. md5(ts+privateKey+publicKey)|
 
 ## Tech Stack
 
@@ -34,9 +30,10 @@ A Simple Movies app
 
 **Dependency Injection:** Dagger Hilt
 
+**Offline Database:** Room Database
+
 **Threading:** Kotlin Coroutines
 
 **Navigation:** Jetpack Navigation Component, Deep Links
 
-**Unit Testing** Junit, Mockito
 
