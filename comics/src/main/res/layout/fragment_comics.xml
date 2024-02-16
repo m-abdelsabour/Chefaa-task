@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_margin="12dp"
+        android:visibility="gone"
         android:background="@drawable/background_search"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"

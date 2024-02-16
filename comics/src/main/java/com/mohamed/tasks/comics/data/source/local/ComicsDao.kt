@@ -16,7 +16,4 @@ interface ComicsDao {
     @Query("SELECT * FROM comics WHERE textObjects=:caption")
      fun getSearchComics(caption: String): LocalComics?
 
-      /*@Update(entity = LocalGym::class)
-      suspend fun updateAll(gymFavState: List<GymFavState>)*/
-
 }
